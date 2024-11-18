@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../../styles/home.css";
 import People from "./people";
 import Planets from "./planets";
+import Vehicles from "./vehicles";
 
 export const Home = () => {
 
@@ -9,5 +10,6 @@ export const Home = () => {
 		<h1 className="title" style={{ fontFamily: 'Star Wars', fontFamily: "SF Distant Galaxy Outline", fontSize: "34px", color: "#FFD700" }}>APi</h1>
 		<People/>
 		<Planets/>
+		<Vehicles/>
 	</div>
 };
