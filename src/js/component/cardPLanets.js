@@ -7,7 +7,7 @@ const CardPlanets = (props) => {
     const isFavorites = store.myfavorite.includes(props.name)
 
     return (
-        <div className="card m-3 d-flex justify-content-center" style={{ fontFamily: "SF Distant Galaxy", fontSize: "20px", width: "18rem", flex: "none", margin: "10", display: "flex", flexWrap: "wrap", float: "left" }}>
+        <div className="card m-3 d-flex justify-content-center" style={{ color: "white", background: "linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0.6))", fontFamily: "SF Distant Galaxy", fontSize: "20px", width: "18rem", flex: "none", margin: "10", display: "flex", flexWrap: "wrap", float: "left" }}>
             <img src={props.uid == 1 ?
                 "https://static.wikia.nocookie.net/esstarwars/images/b/b0/Tatooine_TPM.png"
                 : "https://starwars-visualguide.com/assets/img/planets/" + props.uid + ".jpg"}
@@ -23,7 +23,7 @@ const CardPlanets = (props) => {
                 </Link>
 
                 <button onClick={() => actions.favoritos(props.name)} className="btn btn-outline-warning float-end">
-                    <i className={`fa fa-heart ${isFavorites ? "text-dark" : "text-warning"}`}></i>
+                    <i className={`fa fa-heart ${isFavorites ? "text-light" : "text-warning"}`}></i>
                 </button>
 
             </div>
