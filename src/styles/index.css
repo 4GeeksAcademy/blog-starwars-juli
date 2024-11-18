@@ -10,3 +10,27 @@ body {
     background-repeat: no-repeat; 
 }
 
+.dropdown-menu {
+    background-color: black !important; 
+    border: 2px solid #FFD700 !important; 
+    border-radius: 5px !important; 
+    color: #FFD700 !important; 
+    font-family: "SF Distant Galaxy Outline";
+}
+
+.dropdown-item {
+    color: #FFD700 !important; 
+    transition: all 0.3s ease; 
+}
+
+.fa-trash {
+    color: #FF0000; /* Rojo */
+  }
+  
+  .fa-trash:hover {
+    color: #FFA500; /* Naranja al pasar el mouse */
+  }
+  
+
+
+

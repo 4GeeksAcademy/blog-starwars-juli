@@ -15,7 +15,7 @@ export const Navbar = () => {
 			<div className="ml-auto m-2">
 				{/* <button type="button" className="btn" data-bs-toggle="button" style={{ fontFamily: 'Star Wars', fontFamily: "SF Distant Galaxy Outline", fontSize: "32px", color: "#FFD700" }} >Favourites</button> */}
 				<div className="dropdown">
-					<button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ fontFamily: 'Star Wars', fontFamily: "SF Distant Galaxy Outline", fontSize: "32px", color: "#FFD700" }}>
+					<button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ backgroundColor: "black", fontFamily: 'Star Wars', fontFamily: "SF Distant Galaxy Outline", fontSize: "32px", color: "#FFD700" }}>
 						favorites
 					</button>
 					<ul className="dropdown-menu dropdown-menu-end">
@@ -24,7 +24,7 @@ export const Navbar = () => {
 								<a className="dropdown-item" href="#">
 
 									{item} 
-									<button onClick={() => actions.favoritos(item)} className="btn btn-outline-danger float-end" >
+									<button onClick={() => actions.favoritos(item)} className="d-flex justify-content-center btn float-end" >
 										<i className="fa fa-trash"></i>
 									</button>
 

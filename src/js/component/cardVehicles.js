@@ -7,7 +7,7 @@ const CardVehicles = (props) => {
     const isFavorites = store.myfavorite.includes(props.name)
 
     return (
-        <div className="card" style={{ width: "18rem", flex: "none", margin: "10px" }}>
+        <div className="card" style={{ fontFamily: "SF Distant Galaxy", fontSize: "20px", width: "18rem", flex: "none", margin: "10px" }}>
             <img src={"https://starwars-visualguide.com/assets/img/vehicles/" + props.uid + ".jpg"} class="card-img-top" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">
